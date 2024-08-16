@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dashboard/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Humo Connect</title>
+</head>
+<body>
+    <div class="forma">
+        <form class="reg">
+            <i class="fa fa-remove"></i>
+            <label>Ro'yxatdan o'tish</label>
+            <label>Ism: <br> <input type="text" required placeholder="ism" id="name"> </label>
+            <label>Email: <br> <input type="email" required id="email" placeholder="email"> </label>
+            <label>Password: <br> <input type="password" required  placeholder="password"> </label>
+            <label>
+                <button id="rego" type="submit">Ro'yxatdan o'tish</button>
+            </label>
+            <label>Hisobingiz bormi?  <button id="log">Kirish</button></label>
+        </form>
+        <form class="login">
+            <i class="fa fa-remove"></i>
+            <label>Hisobga kirish</label>
+            <label>Ism: <br> <input type="text" id="name" required placeholder="ism"> </label>
+            <label>Password: <br> <input type="password" required id="password" placeholder="password"> </label>
+            <label>
+                <button id="logino" type="submit">Kirish</button>
+            </label>
+            <label>Hisobingiz yo'qmi? <br> <button id="reg">Ro'yxatdan o'tish</button></label>
+        </form>
+    </div>
+    <div class="own-chat">
+        <div class="header">
+            <p><i class="fa fa-arrow-left"></i> &nbsp;&nbsp; <img src="/img/cocacola.png" alt="">&nbsp;&nbsp; <span id="names">Coca Cola</span></p>
+        </div>
+        <div class="dash">
+        </div>
+        <div class="keyboard">
+            <input type="search" id="msg">
+            <i class="fa fa-send"></i>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <div class="row">
+                <a href="#" class="logo">H~C</a>
+                <div class="navigation">
+                    <div class="menu">
+                        <a href="#hamkor">Hamkorlar</a>
+                        <a href="#investor">Investorlar</a>
+                        <a href="#yetakchi">Yetakchilar</a>
+                        <a href="/chat/chat.html">Chat</a>
+                        <a href="#about">Biz haqimizda</a>
+                    </div>
+                    <i class="fa fa-navicon"></i>
+                    <div class="profil">
+                        <a href="#" class="getStarted">LogIn</a>
+                        <a href="#" class="profile">
+                            <i class="fa fa-profile"></i> <br>
+                            <span class="name"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <aside>
+            <div class="header">
+                <a href="#" class="logo">H~C</a>
+                <i class="fa fa-remove"></i>
+            </div>
+            <ul class="menus">
+                <li><a href="#hamkor">Hamkorlar</a></li>
+                <li><a href="#investor">Investorlar</a></li>
+                <li><a href="#izlash">Izlash</a></li>
+                <li><a href="/chat/chat.html">Chat</a></li>
+                <li><a href="#about">Biz haqimizda</a></li>
+            </ul>
+        </aside>
+        <main>
+            <section>
+                <div class="row" id="about">
+                    <div class="about">
+                        <div class="col">
+                            <h3 class="about-title">
+                                Humo Connect Platform
+                            </h3>
+                            <p>Ushbu platforma orqali siz tadbirkorlar xorijiy investorlar, hamkor kompaniyalarni izlab topishingiz va biznesingizni rivojlantirishingiz mumkin. Shu bilan birga, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae atque in id aspernatur veritatis veniam officiis itaque, deserunt corporis debitis delectus numquam minima commodi, voluptas, sequi obcaecati culpa ullam. Nostrum voluptatem debitis voluptatibus reprehenderit veniam, quos sint omnis, nobis ipsa praesentium eius asperiores optio. Repellendus ad praesentium accusantium incidunt eos?</p>
+                        </div>
+                        <div class="col">
+                            <img src="/img/about.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="hamkor">
+                    <h2 class="title-row">Hamkorlar</h2>
+                    <div class="carusel">
+                            <div class="content-bg">
+                                <img src="/img/disney.jpg" alt="tr">
+                                <p class="title">Disney &nbsp;&nbsp; 
+                                    <a href="#" id="info"><i class="fa fa-info"></i></a>
+                                </p>
+                                <a href="#" id="connect">Bog'lanish</a>
+                            </div>
+                            <div class="content-bg">
+                                <img src="/img/microsoft.png" alt="cc">
+                                <p class="title">Microsoft &nbsp;&nbsp; 
+                                    <a href="#" id="info"><i class="fa fa-info"></i></a>
+                                </p>
+                                <a href="#" id="connect">Bog'lanish</a>
+                            </div>
+                            <div class="content-bg">
+                                <img src="/img/nestle.jpg" alt="sw">
+                                <p class="title">Nestle &nbsp;&nbsp; 
+                                    <a href="#" id="info"><i class="fa fa-info"></i></a>
+                                </p>
+                                <a href="#" id="connect">Bog'lanish</a>
+                            </div>
+                            <div class="content-bg">
+                                <img src="/img/tesla.png" alt="ir">
+                                <p class="title">Tesla &nbsp;&nbsp; 
+                                    <a href="#" id="info"><i class="fa fa-info"></i></a>
+                                </p>
+                                <a href="#" id="connect">Bog'lanish</a>
+                            </div>
+                            <div class="content-bg">
+                                <img src="/img/toshiba.png" alt="ir">
+                                <p class="title">Toshiba &nbsp;&nbsp; 
+                                    <a href="#" id="info"><i class="fa fa-info"></i></a>
+                                </p>
+                                <a href="#" id="connect">Bog'lanish</a>
+                            </div>
+                            <div class="content-bg">
+                                <img src="/img/turkishair.png" alt="ir">
+                                <p class="title">Turk Havo Yo'llari &nbsp;&nbsp; 
+                                    <a href="#" id="info"><i class="fa fa-info"></i></a>
+                                </p>
+                                <a href="#" id="connect">Bog'lanish</a>
+                            </div>
+                    </div>
+                </div>
+                <div class="row" id="investor">
+                    <h2 class="title-row">Investorlar</h2>
+                    <div class="carusel">
+                            <div class="content-bg">
+                                <img src="/img/amazon.png" alt="tr">
+                                <p class="title">Amazon&nbsp;&nbsp; 
+                                    <a href="#" id="info"><i class="fa fa-info"></i></a>
+                                </p>
+                                <a href="#" id="connect">Bog'lanish</a>
+                            </div>
+                            <div class="content-bg">
+                                <img src="/img/chevron.png" alt="cc">
+                                <p class="title">Chevron &nbsp;&nbsp; 
+                                    <a href="#" id="info"><i class="fa fa-info"></i></a>
+                                </p>
+                                <a href="#" id="connect">Bog'lanish</a>
+                            </div>
+                            <div class="content-bg">
+                                <img src="/img/Opel.png" alt="sw">
+                                <p class="title">Opel &nbsp;&nbsp; 
+                                    <a href="#" id="info"><i class="fa fa-info"></i></a>
+                                </p>
+                                <a href="#" id="connect">Bog'lanish</a>
+                            </div>
+                            <div class="content-bg">
+                                <img src="/img/roma.png" alt="ir">
+                                <p class="title">Roma Business &nbsp;&nbsp; 
+                                    <a href="#" id="info"><i class="fa fa-info"></i></a>
+                                </p>
+                                <a href="#" id="connect">Bog'lanish</a>
+                            </div>
+                            <div class="content-bg">
+                                <img src="/img/saudia arabian Oil.png" alt="ir">
+                                <p class="title">Saudia Arabian Oil &nbsp;&nbsp; 
+                                    <a href="#" id="info"><i class="fa fa-info"></i></a>
+                                </p>
+                                <a href="#" id="connect">Bog'lanish</a>
+                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 class="title-row">Top 10 Hamkorlar</h2>
+                    <div class="top">
+                        <ul class="brands">
+                            <li>Arabian Oil <br>
+                                <span style="color: seagreen;">12.3 mlrd $ <b id="point"></b></span>
+                            </li>
+                            <li>Persian Oil <br>
+                                <span style="color: seagreen;">11.4 mlrd $ <b id="point"></b></span>
+                            </li>
+                            <li>Bayraktar Tr <br>
+                                <span style="color: seagreen;">10.9 mlrd $ <b id="point"></b></span>
+                            </li>
+                            <li>East Fly <br>
+                                <span style="color: seagreen;">10.6 mlrd $ <b id="point"></b></span>
+                            </li>
+                            <li>Caribian tourist <br>
+                                <span style="color: seagreen;">10.4 mlrd $ <b id="point"></b></span>
+                            </li>
+                            <li>California Hotel <br>
+                                <span style="color: seagreen;">10.1 mlrd $ <b id="point"></b></span>
+                            </li>
+                            <li>Meest China Logistic <br>
+                                <span style="color: seagreen;">10.06 mlrd $ <b id="point"></b></span>
+                            </li>
+                            <li>Zurich Logistic <br>
+                                <span style="color: seagreen;">9.5 mlrd $ <b id="point"></b></span>
+                            </li>
+                            <li>Roma Medical Clinic <br>
+                                <span style="color: seagreen;">7.6 mlrd $ <b id="point"></b></span>
+                            </li>
+                            <li>Avangard Korea <br>
+                                <span style="color: seagreen;">7.5 mlrd $ <b id="point"></b></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="yetakchi">
+                    <h2 class="title-row">
+                        Yetakchi investorlar
+                    </h2>
+                    <div class="search">
+                        <div class="investors">
+                            <div class="line">
+                                <p>Logo</p>
+                                <p class="invest-name">Investor</p>
+                                <p class="invest-total">Invest</p>
+                                <p class="invest-connect">Bog'lanish</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="row">
+                    <p><span>&copy;</span> Humo Connect Platform Deadline </p>
+                    <p>< /D> - Doniyorbek | JavaScript Forever</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    
+    <script src="./dashboard/dash.js"></script>
+</body>
+</html>

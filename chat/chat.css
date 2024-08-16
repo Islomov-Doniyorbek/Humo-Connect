@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{ 
+    --bgHead: rgb(221, 227, 223);
+    --bg2: rgba(38,112,66,0.211);
+    --bgMain: rgb(225, 242, 231);
+    --txtClr: rgb(167, 255, 245); 
+    --bgAsd: rgb(35, 108, 67);
+}
+.chats {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+}
+.chats .title {
+    font-size: 24px;
+    color: var(--txtClr);
+    background: var(--bg2);
+    padding: 8px 13px;
+    margin-bottom: 15px;
+}
+.chat {
+    background: var(--bgAsd);
+    width: 100%;
+    list-style: none;
+    padding: 8px 12px;
+}
+.chat li {
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 50% 30%;
+    border-bottom: 1.3px solid seagreen;
+    align-items: center;
+    color: var(--txtClr);
+}
+li img {
+    position: relative;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.chat a {
+    margin: 10px;
+    font-size: 18px;
+    color: var(--txtClr);
+}
+.own-chat {
+    position: absolute;
+    z-index: 15;
+    top: 50px;
+    height: 450px;
+    background: var(--bgAsd);
+    display: none;
+    padding: 2px;
+    grid-template-rows: 15% 77% 8%;
+    border-radius: 4px;
+    border: 1.3px solid var(--txtClr);
+}
+.own-chat .header {
+    position: relative;
+    width: 100%;
+    padding: 8px 13px;
+}
+.header i {
+    padding: 5px;background: #000;
+}
+.header img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 50%;
+}
+.header p {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: var(--txtClr);
+    font-weight: 600;
+}
+.own-chat .dash {
+    position: relative;
+    padding: 8px 13px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow-y: auto;
+    background: #8db483;
+}
+.dash .msg {
+    position: relative;
+    width: auto;
+    padding: 5px 13px;
+    background: var(--bgMain);
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 10px;
+}
+.own-chat .keyboard {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+.keyboard input {
+    width: 90%;
+    position: relative;
+    outline: none;
+    border: 1px solid var(--bgAsd);
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+.keyboard i {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--txtClr);
+    border: 1px solid red;
+    padding: 5px;
+}
+@media screen and (min-width:769px) {
+    .own-chat {
+        width: 400px;
+    }
+}
+@media screen and (max-width:768px) {
+    .own-chat {
+        width: 300px;
+    }
+}
