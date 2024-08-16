@@ -12,6 +12,11 @@
     --txtClr: rgb(167, 255, 245); 
     --bgAsd: rgb(35, 108, 67);
 }
+* i {
+    color: #8db483 !important;
+    border: none !important;
+    padding: none !important;
+}
 .chats {
     position: relative;
     width: 100%;
